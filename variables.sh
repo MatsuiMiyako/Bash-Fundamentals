@@ -1,8 +1,13 @@
 #!/bin/bash
 
+# ---------------------------------------------------------------------------------------------------------------------
+
+# Bash Variables
+
 # What are variables?
 # Variables are names given to the computer that can store values or data.
 # Basically, think of it as storing 'object(s)' in a 'box'. 
+# You 'assign' the 'object' to the 'box' with the assignment operator (=)
 
 # Why use variables?
 # You may want to store some data for ease of access or later usage. 
@@ -32,9 +37,19 @@ last_name="Stobs"				# the variable `last_name` has a new value as well
 echo $first_name 				# this will 'echo' the value of the variable `first_name`
 echo $last_name 				# this will 'echo' the value of the variable `last_name`
 
+# What not to do?
+# In Bash, variables cannot have any special characters (including whitespaces) except for the underscore (_).
+# They cannot start with a number either
+# There are also 'reserved' words you cannot use either (e.g., do, done, elif, else, fi, for, function, if, in, etc.)
 
+# Examples of what to avoid:
+# 1stname="Bill"
+# my-variable-name="how-do-i-bash"
+# if="icannotdothis"
 
+# Make sure to follow proper bash variable naming conventions (basically don't do any of the above)
 
+# ---------------------------------------------------------------------------------------------------------------------
 
 
 
