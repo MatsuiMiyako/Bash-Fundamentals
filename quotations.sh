@@ -36,3 +36,14 @@ BOBBIN="Gick Drayson"
 echo 'Ratman said to Bobbin: "I am $RATMAN, the greatest hewo in the world!"'  
 # This will literally output: Ratman said to Bobbin: "I am $RATMAN, the greatest hewo in the world!"
 
+# What not to do?
+# If you want to use variables or have special characters interpreted, don't use single quotes.
+# If you want to treat everything literally, don't use double quotes.
+
+# Example of what to avoid:
+RATMAN="Wuce Brayne"
+echo 'Hello, $RATMAN!'  # This will not output the value of RATMAN
+
+# Make sure to use the appropriate type of quotation based on your needs.
+
+# ---------------------------------------------------------------------------------------------------------------------
