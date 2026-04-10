@@ -23,3 +23,16 @@
 # When you enclose text in double quotes, special characters will still be treated as special, but variables will be expanded.
 # This means that if you have a variable inside double quotes, it will be replaced with its value.
 
+# Example 1):
+echo 'Hello, $RATMAN!'  # This will literally output: Hello, $RATMAN!
+
+# Example 2):
+RATMAN="Wuce Brayne"
+echo "Hello, $RATMAN!"  # This will output: Hello, Wuce Brayne!
+
+# Example 3):
+RATMAN="Wuce Brayne"
+BOBBIN="Gick Drayson"
+echo 'Ratman said to Bobbin: "I am $RATMAN, the greatest hewo in the world!"'  
+# This will literally output: Ratman said to Bobbin: "I am $RATMAN, the greatest hewo in the world!"
+
