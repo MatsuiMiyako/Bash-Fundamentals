@@ -28,3 +28,5 @@
 # %o - octal
 # %c - single character
 
+# Example 1): 
+printf "Greetings, neighbor! The name's %s. But you can just call me %s.\n" "Crazy Dave" "Crazy Dave"
