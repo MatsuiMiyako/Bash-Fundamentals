@@ -17,6 +17,14 @@
 # How does printf work?
 # Literal text is printed as is
 # Format specifiers start with '%'
-# Syntax: printf FORMAT [ARGUEMENTS...]
+# Syntax: printf "formatted-string" [arguements...]
+# printf does not automatically newline
 
+# Common Format Specifiers:
+# %s - strings
+# %d - integer (decimal)
+# %f - floating-point
+# %x - hexadecimal (lowercase)
+# %o - octal
+# %c - single character
 
