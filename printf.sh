@@ -30,3 +30,12 @@
 
 # Example 1): 
 printf "Greetings, neighbor! The name's %s. But you can just call me %s.\n" "Crazy Dave" "Crazy Dave"
+# Output: Greetings, neighbor! The name's Crazy Dave. But you can just call me Crazy Dave.
+# The arguments "Crazy Dave" and "Crazy Dave" are substituted into the format string where the %s specifiers are located, in order
+
+# Example 2):
+number=67
+printf "The number is %d.\n" "$number"
+# Output: The number is 67.
+
+
