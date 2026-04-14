@@ -40,9 +40,9 @@ printf "The number is %d.\n" "$number"
 # Output: The number is 67.
 
 # Example 3):
-printf "%.2f\n" 1.337
-# Output: 1.34
-# I rounded the number to two decimal points
+printf "%.4f\n" 3.133734
+# Output: 3.1337
+# I rounded the number to four decimal points
 
 # Example 4):
 printf "%x\n" 61669
@@ -58,3 +58,6 @@ printf "What is that%c\n" $'\x3F'
 # \x means hex 3F which is decimal 63 which corresponds to the ASCII character '?'
 # Output: What is that?
 
+# If there are more arguemens than specifiers, `printf` reuses the format string
+# Example 6)
+printf "Hi %s, this isn't a automated message.\n" "Peashooter" "Sunflower" "Wall-nut"
