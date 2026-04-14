@@ -26,7 +26,7 @@
 # %f - floating-point
 # %x - hexadecimal (lowercase)
 # %o - octal
-# %c - single character
+# %c - single character (uses ASCII value)
 
 # Example 1): 
 printf "Greetings, neighbor! The name's %s. But you can just call me %s.\n" "Crazy Dave" "Crazy Dave"
@@ -50,3 +50,11 @@ printf "%x\n" 61669
 # the %o works in a similar fashion
 printf "%o\n" 266305
 # Output: 1010101
+
+# Example 5)
+printf "What is that%c\n" $'\x3F'
+# %c only prints one character from ASCII code or the first character in a string
+# the $'...' tells Bash to interpret "escape sequences" (when you see '\') inside the quotes
+# \x means hex 3F which is decimal 63 which corresponds to the ASCII character '?'
+# Output: What is that?
+
