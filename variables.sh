@@ -21,7 +21,7 @@
 first_name="Gill"
 last_name="Bates"
 
-echo $first_name 				# this will 'echo' the value of the variable `first_name
+echo $first_name 				# this will 'echo' the value of the variable `first_name`
 echo $last_name 				# this will 'echo' the value of the variable `last_name`
 
 # Example 2):

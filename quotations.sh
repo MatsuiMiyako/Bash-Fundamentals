@@ -43,6 +43,7 @@ echo 'Ratman said to Bobbin: "I am $RATMAN, the greatest hewo in the world!"'
 # Example of what to avoid:
 RATMAN="Wuce Brayne"
 echo 'Hello, $RATMAN!'  # This will not output the value of RATMAN
+# This will literally output: Hello, $RATMAN!
 
 # Make sure to use the appropriate type of quotation based on your needs.
 
