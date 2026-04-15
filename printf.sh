@@ -51,7 +51,7 @@ printf "%x\n" 61669
 printf "%o\n" 266305
 # Output: 1010101
 
-# Example 5)
+# Example 5):
 printf "What is that%c\n" $'\x3F'
 # %c only prints one character from ASCII code or the first character in a string
 # the $'...' tells Bash to interpret "escape sequences" (when you see '\') inside the quotes
@@ -59,5 +59,22 @@ printf "What is that%c\n" $'\x3F'
 # Output: What is that?
 
 # If there are more arguemens than specifiers, `printf` reuses the format string
-# Example 6)
+# Example 6):
 printf "Hi %s, this isn't a automated message.\n" "Peashooter" "Sunflower" "Wall-nut"
+# Output:
+# Hi Peashooter, this isn't a automated message.
+# Hi Sunflower, this isn't a automated message.
+# Hi Wall-nut, this isn't a automated message.
+
+# Common Escape Sequences:
+# \n - newline
+# \t - tab
+# \\ - backslash
+# \" - double quote
+# \' - single quote
+# \a - alert (bell)
+
+# Example 7):
+printf "This is a tab:\tbut not the kind you find you have to pay for in a bar.\n"
+# Output: This is a tab:	but not the kind you find you have to pay for in a bar.
+
