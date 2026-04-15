@@ -50,8 +50,3 @@ echo $last_name 				# this will 'echo' the value of the variable `last_name`
 # Make sure to follow proper bash variable naming conventions (basically don't do any of the above)
 
 # ---------------------------------------------------------------------------------------------------------------------
-
-
-
-
-

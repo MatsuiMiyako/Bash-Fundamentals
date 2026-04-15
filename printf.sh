@@ -81,6 +81,13 @@ printf "This is a tab:\tbut not the kind you find you have to pay for in a bar.\
 # What not to do
 # Always remember your quotes (" ")
 # Don't mix up format specifiers and arguements
-# Remember that printf does'nt automatically newline
+# Remember that printf doesn't automatically newline
 
 # Examples of what to avoid:
+# printf %s Crazy Dave
+# printf "%d\n" "abc"
+# printf "Crazy Dave"
+
+# Make sure to stick to the syntax of printf
+
+# ---------------------------------------------------------------------------------------------------------------------
