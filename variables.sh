@@ -37,7 +37,7 @@ last_name="Stobs"				# the variable `last_name` has a new value as well
 echo $first_name 				# this will 'echo' the value of the variable `first_name`
 echo $last_name 				# this will 'echo' the value of the variable `last_name`
 
-# What not to do?
+# What not to do
 # In Bash, variables cannot have any special characters (including whitespaces) except for the underscore (_).
 # They cannot start with a number either
 # There are also 'reserved' words you cannot use either (e.g., do, done, elif, else, fi, for, function, if, in, etc.)

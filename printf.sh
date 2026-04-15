@@ -78,9 +78,9 @@ printf "Hi %s, this isn't a automated message.\n" "Peashooter" "Sunflower" "Wall
 printf "This is a tab:\tbut not the kind you find you have to pay for in a bar.\n"
 # Output: This is a tab:	but not the kind you find you have to pay for in a bar.
 
-# What not to do?
+# What not to do
 # Always remember your quotes (" ")
 # Don't mix up format specifiers and arguements
 # Remember that printf does'nt automatically newline
 
-# 
+# Examples of what to avoid:
