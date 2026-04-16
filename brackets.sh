@@ -14,4 +14,14 @@
 # Basically, mastering them will be helpful.
 
 # How do brackets work?
-# 
+# Parentheses `()`
+# The current "shell" (a program that lets you interact with the operating system) is the "parent shell."
+# Parentheses in Bash are used to create a subshell, a "child" that runs independantly from the current shell.
+
+# Example 1):
+( cd /etc; cat hostname )
+# Output: my-computer-name
+# The parentheses create a subshell where it changes your directory to `/etc`, which then runs the second command.
+# The second command is also in the subshell, and is executed after the first command because of the semicolon (;),
+# which allows for multiple commands to be executed in order
+
