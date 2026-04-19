@@ -41,3 +41,44 @@ echo "I am... $name!"
 # First, `$(...)` syntax gets the output of a command and assigns it to the variable `name`.
 # Next, the `tr` command performs a ROT13 translation (basically shifting all the letters 13 places to the right).
 # Lastly, the `<<<` operator passes a string directly into a command.
+
+# Double parentheses `(( ))`
+# Double parentheses are used for arithmetic operations in bash.
+
+# Example 4):
+x=9
+y=10
+echo "The sum of $x and $y is $((x + y + 2))! haha"
+# Output: The sum of 9 and 10 is 21! haha
+# The double parentheses allowed for the addition of the variables `x` and `y` and the number '2'
+
+# Brackets `[]`
+# Brackets are used for test expressions in bash. 
+# They are used to evaluate conditions and return a status code (0 for true, 1 for false).
+
+# Example 5):
+num=67
+if [ $num -gt 0 ]; then
+    echo "num is positive"
+fi
+# Output: num is positive
+# The brackets allowed for the evaluation of the condition `$num -gt 0`, which checks if the variable `num` is greater than (-gt) 0,
+# which is true since `num` is 67.
+
+# Example 6):
+str1="batman"
+str2="ironman"
+if [ "$str1" = "$str2" ]; then
+    echo "The two people are the same."
+else
+    echo "The two people are not the same."
+fi
+# Output: The two people are not the same.
+# The brackets allowed for the evaluation of the condition `"$str1" = "$str2"`, which checks if the two strings are equal.
+# Since `str1` is "batman" and `str2` is "ironman", the condition is false, and it executes the else statement.
+
+# Double brackets `[[ ]]`
+# Double brackets are basically the sigma version of brackets; they have more aura than single brackets
+
+# Example 7):
+
