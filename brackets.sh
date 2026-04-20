@@ -78,7 +78,29 @@ fi
 # Since `str1` is "batman" and `str2` is "ironman", the condition is false, and it executes the else statement.
 
 # Double brackets `[[ ]]`
-# Double brackets are basically the sigma version of brackets; they have more aura than single brackets
+# Double brackets are basically the sigma version of brackets; they have more aura than single brackets...
+# With single brackets. you must quote your variables if it is empty or it contains spaces.
+# Double brackets allow for optional quoting.
 
 # Example 7):
+str1="batman"
+str2="ironman"
+if [[ $str1 = $str2 ]]; then
+    echo "The two people are still the same."
+else
+    echo "The two people are still not the same."
+fi
+# Output: The two people are still not the same.
+# Double brackets make it so bash isn't so stingy about quotes inside them
+
+# Example 8):
+i_am_empty=""
+if [[ $i_am_empty == full ]]; then
+    echo "go empty the trash, you lazy dog"
+else
+    echo "you got lucky this time"
+fi
+# Output: you got lucky this time
+# The string 'full' is unquoted here but it's fine because it's double brackets
+# The variable `i_am_empty` is also an empty variable, which is treated as "missing arguement" using single brackets
 
