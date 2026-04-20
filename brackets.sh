@@ -116,4 +116,10 @@ echo {L..P}
 # This allows for number sequences and character ranges to be generated quickly
 
 # Example 10):
-echo 
+real="Super"
+fake="Bat"
+
+echo "The real superhero is ${real}man and not ${fake}man. T-T"
+# Output: The real superhero is Superman and not Batman. T-T
+# Without curly braces, e.g., $realman or $fakeman, Bash would look for unintended variable names
+
