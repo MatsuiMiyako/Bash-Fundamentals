@@ -104,3 +104,16 @@ fi
 # The string 'full' is unquoted here but it's fine because it's double brackets
 # The variable `i_am_empty` is also an empty variable, which is treated as "missing arguement" using single brackets
 
+# Curly Braces `{}`
+# Curly braces allow for brace expansion, a feature to generate a sequence of strings quickly. 
+# It can also be used to clarify where the variable name ends.
+
+# Example 9):
+echo {0..10..2}
+echo {L..P}
+# Output: 0 2 4 6 8 10
+# Output: L M N O P
+# This allows for number sequences and character ranges to be generated quickly
+
+# Example 10):
+echo 
