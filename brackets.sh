@@ -134,6 +134,18 @@ echo "The real superhero is ${real}man and not ${fake}man. T-T"
 # Don't use unsupported operators in double brackets
 
 # Examples of what to avoid:
-#
 
+# if [ $i_am_empty == full ]; then
+# 
 
+# str1="bat man"
+#str2="bat man"
+#if [ $str1 = $str2 ]; then
+
+# if [ 5 + 10 -gt 10]; then
+
+# (x=42)
+# echo $x
+
+# num=7
+# if [[ $num >< 10 ]]; then
