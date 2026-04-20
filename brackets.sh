@@ -111,8 +111,10 @@ fi
 # Example 9):
 echo {0..10..2}
 echo {L..P}
+echo {A..C}{1..3}
 # Output: 0 2 4 6 8 10
 # Output: L M N O P
+# Output: A1 A2 A3 B1 B2 B3 C1 C2 C3
 # This allows for number sequences and character ranges to be generated quickly
 
 # Example 10):
@@ -122,4 +124,16 @@ fake="Bat"
 echo "The real superhero is ${real}man and not ${fake}man. T-T"
 # Output: The real superhero is Superman and not Batman. T-T
 # Without curly braces, e.g., $realman or $fakeman, Bash would look for unintended variable names
+
+# What not to do
+# Don't use empty variables with single brackets; use double brackets instead
+# Don't forget to use quotes around strings with spaces in single brackets
+# Don't do math in single brackets
+# Don't forget to use curly braces for variable names in strings
+# Don't use parentheses when a subshell is not needed
+# Don't use unsupported operators in double brackets
+
+# Examples of what to avoid:
+#
+
 
