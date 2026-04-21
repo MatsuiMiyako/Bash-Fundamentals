@@ -153,3 +153,7 @@ echo "The real superhero is ${real}man and not ${fake}man. T-T"
 # num=7
 # if [[ $num >< 10 ]]; then
 # Error: unsupported operators in double brackets
+
+# Make sure to use appropriate brackets
+
+# ---------------------------------------------------------------------------------------------------------------------
