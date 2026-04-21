@@ -136,16 +136,20 @@ echo "The real superhero is ${real}man and not ${fake}man. T-T"
 # Examples of what to avoid:
 
 # if [ $i_am_empty == full ]; then
-# 
+# Error: variables don't have quotes
 
 # str1="bat man"
-#str2="bat man"
-#if [ $str1 = $str2 ]; then
+# str2="bat man"
+# if [ $str1 = $str2 ]; then
+# Error: unquoted variables that have spaces 
 
 # if [ 5 + 10 -gt 10]; then
+# Error: arithmetic is done in double parentheses `(())`
 
 # (x=42)
 # echo $x
+# Error: unnecessary subshell
 
 # num=7
 # if [[ $num >< 10 ]]; then
+# Error: unsupported operators in double brackets
