@@ -56,5 +56,25 @@ fi
 # The `if` statement checks if the variable `hero` is equal to "spiderman".
 # Since `hero` is "spooderman", the condition is false, and it runs the else block of code.
 
+# Elif statements
+# The `elif` statement is used to check multiple conditions like a `if` statement.
+# It stands for "else if" and allows you to check additional conditions if the previous `if` or `elif` conditions weren't met.
 
+# Example 4):
+read -p "Enter your age: " age
+if [[ $age -lt 18 ]]; then
+    echo "You are not of legal drinking age in Manitoba."
+elif [[ $age -ge 18 ]] && [[ $age -lt 19 ]]; then
+    echo "You are of legal drinking age in Manitoba, but not in Ontario."
+else
+    echo "You are of legal drinking age in Canada."
+fi
+# Output will depend on the age entered by the user.
+# The `if` statement checks if the variable `age` is less than (-lt) 18, and if it is, it executes the first block of code.
+# If the `if` condition is false, 
+# it checks the `elif` condition to see if `age` is greater than or equal to (-ge) 18 and less than (-lt) 19,
+# and if it is, it executes the second block of code.
+# If both the `if` and `elif` conditions are false, it executes the `else` block of code.
+
+# Make sure to use the appropriate conditional statements based on your needs.
 
