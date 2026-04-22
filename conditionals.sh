@@ -82,5 +82,16 @@ fi
 # and make sure to use the correct operators for your conditions 
 # (e.g., -gt for greater than, -lt for less than, = for string comparison, etc.)
 
+# Example of what to avoid:
+# if [ condition ]; then
+#    random code here 
+# Error: Missing fi to close the if statement, which will cause a syntax error.
+
+# num=67
+# if [ $num > 50 ]; then
+#     echo "num is greater than 50"
+# fi
+# Error: Using the wrong operator (>) for numeric comparison, which will cause an error.
+
 # Make sure to use the appropriate conditional statements based on your needs.
 
