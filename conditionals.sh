@@ -76,5 +76,11 @@ fi
 # and if it is, it executes the second block of code.
 # If both the `if` and `elif` conditions are false, it executes the `else` block of code.
 
+# What not to do
+# Make sure to use the correct syntax for your conditional statements.
+# For example, don't forget to close your `if` statement with `fi`, 
+# and make sure to use the correct operators for your conditions 
+# (e.g., -gt for greater than, -lt for less than, = for string comparison, etc.)
+
 # Make sure to use the appropriate conditional statements based on your needs.
 
