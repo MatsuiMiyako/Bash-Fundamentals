@@ -50,3 +50,24 @@ echo "The Justice League consists of: ${JusticeLeague[*]}"
 # The `IFS` variable is set to a comma and space, which means that when we use `${JusticeLeague[*]}`, 
 # the elements of the array will be separated by a comma and space
 # the asterisk '*' is used to print all the elements of the array, similar to '@', but it respects the `IFS` separator.
+
+# Example 4):
+# You can append or remove elements from an array using the `+=` operator or by unsetting an index.
+JusticeLeague+=("Hulk") 
+echo "After adding Hulk, the Justice League consists of: ${JusticeLeague[*]}"
+# Output: After adding Hulk, the Justice League consists of: Ironman, Captain America, Thor, Hulk
+# The `+=` operator appends "Hulk" to the array
+unset JusticeLeague[1] 
+echo "After removing Captain America, the Justice League's team captain is ${JusticeLeague[0]}"
+# Output: After removing Captain America, the Justice League's team captain is Ironman
+# The `unset` command removes the second element "Captain America" from the array
+
+# Example 5):
+# You can also get the length of an array using `${#array_name[@]}`.
+echo "The current members of the Justice League are: ${JusticeLeague[*]}"
+echo "The Justice League has ${#JusticeLeague[*]} members."
+# Output: The current members of the Justice League are: Ironman, Thor, Hulk
+# Output: The Justice League has 3 members.
+# The first line prints the current members of the Justice League.
+# The second line uses `${#JusticeLeague[*]}` to get the number of elements in the array, 
+# which is 3 after we removed "Captain America".
