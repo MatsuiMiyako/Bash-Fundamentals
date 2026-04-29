@@ -71,3 +71,25 @@ echo "The Justice League has ${#JusticeLeague[*]} members."
 # The first line prints the current members of the Justice League.
 # The second line uses `${#JusticeLeague[*]}` to get the number of elements in the array, 
 # which is 3 after we removed "Captain America".
+
+# Example 6):
+# You can also loop through an array using a `for` loop.
+echo "The Justice League members are:"
+for member in "${JusticeLeague[@]}"; do
+    echo "- $member"
+done
+# Output: The Justice League members are:
+# Output: - Ironman
+# Output: - Thor
+# Output: - Hulk
+# The `for` loop iterates through each element in the `JusticeLeague` array and prints it with a dash in front. 
+# The loop uses `${JusticeLeague[@]}` to access all elements of the array.
+
+# What not to do
+# Don't forget that array indices start at 0, so the first element is at index 0, the second at index 1, and so on.
+# Don't forget to use quotes around array elements if they contain spaces.
+# Don't forget to use the correct syntax for creating and accessing arrays.
+# Don't forget to use the correct syntax for appending and removing elements from arrays.
+# Don't forget to use the correct syntax for getting the length of an array.
+# Don't forget to use the correct syntax for looping through arrays.
+
