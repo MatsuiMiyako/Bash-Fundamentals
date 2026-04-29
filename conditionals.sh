@@ -33,7 +33,7 @@ fi
 # Example 2):
 dog="Dooby Scoo"
 man="Shaggy-haired fella"
-if [[ $dog = "Dooby Scoo" ]] && [[ $man = "Shaggy-haired fella" ]]; then
+if [[ $dog == "Dooby Scoo" ]] && [[ $man == "Shaggy-haired fella" ]]; then
     echo "You are watching the wrong show, you idiot."
 fi
 # Output: You are watching the wrong show, you idiot.
