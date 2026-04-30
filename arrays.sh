@@ -107,4 +107,6 @@ done
 # Output: (error)
 # This will cause an error because there should be no spaces around the equal sign when creating an array.
 
+# Make sure to be careful when working with arrays and always check your syntax to avoid errors
+
 # ---------------------------------------------------------------------------------------------------------------------
