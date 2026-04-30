@@ -19,3 +19,17 @@
 # - String Operators for string comparison
 # - Logical Operators for combining conditions
 # - File Operators for file comparison
+
+# Test Operators for integer comparison
+# These operators are used to compare integer values. Nothing fancy.
+
+# Bash Operators                            Meaning
+# -eq                                      Equal to
+# -ne                                      Not equal to
+# -gt                                      Greater than
+# -lt                                      Less than
+# -ge                                      Greater than or equal to
+# -le                                      Less than or equal to
+
+# Example 1):
+
