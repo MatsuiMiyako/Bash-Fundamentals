@@ -93,3 +93,18 @@ done
 # Don't forget to use the correct syntax for getting the length of an array.
 # Don't forget to use the correct syntax for looping through arrays.
 
+# Examples of what to avoid:
+
+# echo ${JusticeLeague[3]}
+# Output: (empty)
+# This will print an empty string because there is no element at index 3 after we removed "Captain America".
+
+# JusticeLeague+=(Black Widow)
+# Output: (error)
+# This will cause an error because "Black Widow" is not quoted
+
+# avengers = (Baatman Sooperman WoonderWomun)
+# Output: (error)
+# This will cause an error because there should be no spaces around the equal sign when creating an array.
+
+# ---------------------------------------------------------------------------------------------------------------------
