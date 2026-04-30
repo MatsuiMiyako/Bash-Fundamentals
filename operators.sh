@@ -13,3 +13,9 @@
 # They are essential for making decisions in your scripts and controlling the flow of execution.
 # It's kind of similar to conditionals, in the way that they both allow you to make decisions in your scripts.
 
+# How do operators work?
+# There are four main types of operators in Bash:
+# - Test Operators for integer comparison
+# - String Operators for string comparison
+# - Logical Operators for combining conditions
+# - File Operators for file comparison
