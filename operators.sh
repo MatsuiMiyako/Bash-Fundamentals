@@ -83,3 +83,19 @@ fi
 # In this example, the script checks if your favorite color is blue by using the = operator. 
 # If you enter "blue", it confirms that it's the best color. 
 # Otherwise you're cooked.
+
+# Example 4):
+read -p "Enter a type of meat: " word
+# if the word contains meat 
+if [[ "$word" == *meat* ]]; then
+    echo "You follow proper logic!"
+else
+    echo "How does your word even correspond to the animal meat that you just entered?"
+fi
+# Example Output:
+# Enter a type of meat: chicken
+# How does your word even correspond to the animal meat that you just entered?
+# Basically the script checks if the word you entered contains the substring "meat" by using the == operator and asterisks.
+# If it does contain "meat", it confirms that you follow proper logic. 
+# Otherwise, it questions how your sanity because the word you entered does NOT correspond to the animal meat that you entered 
+# in ANY way, shape, or form.
