@@ -48,11 +48,11 @@ fi
 # These operators are used to compare string values. They are pretty straightforward.
 
 # Bash Operators                            Meaning
-# =                                       Equal to (but for strings)
+# =                                       Equal to (but for strings) (literal matching)
 # !=                                      Not equal to (but for strings)
 # <                                       Less than (in ASCII alphabetical order)
 # >                                       Greater than (in ASCII alphabetical order)
-# ==                                      String is equal to
+# ==                                      String is equal to (pattern matching)
 # -z                                      String is null (empty)
 # -n                                      String is not null (not empty)
 
@@ -69,3 +69,17 @@ fi
 # In this example, the script checks if you entered a name or not by using the -z operator, 
 # which checks if the string is empty. If you didn't enter anything, it tells you that you didn't enter a name. 
 # Otherwise, it greets you by your name.
+
+# Example 3):
+read -p "Enter your favorite color: " color
+if [ "$color" = "blue" ]; then
+    echo "Blue is the best color!"
+else
+    echo "Booooooo join team blue or else..."
+fi
+# Example Output:
+# Enter your favorite color: red
+# Booooooo join team blue or else...
+# In this example, the script checks if your favorite color is blue by using the = operator. 
+# If you enter "blue", it confirms that it's the best color. 
+# Otherwise you're cooked.
