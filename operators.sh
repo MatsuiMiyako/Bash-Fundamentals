@@ -99,3 +99,29 @@ fi
 # If it does contain "meat", it confirms that you follow proper logic. 
 # Otherwise, it questions how your sanity because the word you entered does NOT correspond to the animal meat that you entered 
 # in ANY way, shape, or form.
+
+# Logical Operators for combining conditions
+# These operators are used to combine multiple conditions in your scripts.
+
+# Bash Operators                            Meaning
+# &&                                      Logical AND (both conditions must be true)
+# ||                                      Logical OR (at least one condition must be true)
+# !                                       Logical NOT (negates a condition)
+# -a                                      Logical AND (both conditions must be true) (alternative syntax)
+# -o                                      Logical OR (at least one condition must be true) (alternative syntax)
+
+# Example 5):
+read -p "Enter a number: " num
+if [ $num -gt 0 ] && [ $num -lt 100 ]; then
+    echo "The number is between 0 and 100!"
+else
+    echo "The number is not between 0 and 100!"
+fi
+# Example Output:
+# Enter a number: 67
+# The number is between 0 and 100!
+# The script checks if your number is between 0 and 100 non inclusive
+# Both conditions must be true for it to confirm that your number is between 0 and 100 by using the && operator.
+# If either condition is false, it tells you that your number is not between 0 and 100.
+
+
