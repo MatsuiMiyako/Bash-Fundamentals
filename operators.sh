@@ -124,4 +124,17 @@ fi
 # Both conditions must be true for it to confirm that your number is between 0 and 100 by using the && operator.
 # If either condition is false, it tells you that your number is not between 0 and 100.
 
+# Example 6):
+read -p "Enter a number: " num
+if ! [ $num -gt 0 ]; then
+    echo "The number does not spread positivity!"
+else
+    echo "The number spreads positivity!"
+fi
+# Example Output:
+# Enter a number: 67
+# The number spreads positivity!
+# In this example, the script checks if your number is NOT greater than 0 by using the ! operator.
+# If your number is not greater than 0, it tells you that your number does not spread positivity because it's not positive.
+# Otherwise, it confirms that your number spreads positivity :P
 
