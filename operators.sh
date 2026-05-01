@@ -32,4 +32,40 @@
 # -le                                      Less than or equal to
 
 # Example 1):
+read -p "Enter a number: " num
+if [ $num -gt 0 ]; then
+    echo "The number spreads positivity!"
+else
+    echo "The number spreads negativity!"
+fi
+# Example Output:
+# Enter a number: 67
+# The number spreads positivity!
+# Basically, the script checks if your number is positive or negative by using the -gt operator and comparing it to 0.
+# You can just replace the 'gt' operator with any of the other operators to compare your number in different ways.
 
+# String Operators for string comparison
+# These operators are used to compare string values. They are pretty straightforward.
+
+# Bash Operators                            Meaning
+# =                                       Equal to (but for strings)
+# !=                                      Not equal to (but for strings)
+# <                                       Less than (in ASCII alphabetical order)
+# >                                       Greater than (in ASCII alphabetical order)
+# ==                                      String is equal to
+# -z                                      String is null (empty)
+# -n                                      String is not null (not empty)
+
+# Example 2):
+read -p "Enter your name: " name
+if [ -z "$name" ]; then
+    echo "You didn't enter a name!"
+else
+    echo "Hello, $name!"
+fi
+# Example Output:
+# Enter your name:
+# You didn't enter a name!
+# In this example, the script checks if you entered a name or not by using the -z operator, 
+# which checks if the string is empty. If you didn't enter anything, it tells you that you didn't enter a name. 
+# Otherwise, it greets you by your name.
