@@ -125,7 +125,7 @@ fi
 # If either condition is false, it tells you that your number is not between 0 and 100.
 
 # Example 6):
-read -p "Enter a number: " num
+read -p "Enter a number again: " num
 if ! [ $num -gt 0 ]; then
     echo "The number does not spread positivity!"
 else
@@ -138,3 +138,21 @@ fi
 # If your number is not greater than 0, it tells you that your number does not spread positivity because it's not positive.
 # Otherwise, it confirms that your number spreads positivity :P
 
+# Example 7): use -o
+read -p "Enter a number again again: " num
+if [ $num -lt 67 ] -o [ $num -gt 67 ]; then
+    echo "The number is not legendary!"
+else
+    echo "The number is legendary!"
+fi
+# Example Output:
+# Enter a number again again: 67
+# The number is legendary!
+# In this example, the script checks if your number is less than OR greater than 67 by using the -o operator.
+# This can be a way to check if your number is NOT equal to 67, 
+# because if it's less than or greater than 67, then it's not equal to 67.
+
+# File Operators for file comparison
+# These operators are used to compare files and check their properties.
+
+# Bash Operators                            Meaning
