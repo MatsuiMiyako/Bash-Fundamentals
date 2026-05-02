@@ -178,6 +178,27 @@ fi
 # The Downloads folder exists!
 # The script checks if the Downloads folder exists in your home directory by using the -d operator.
 
-
+# Example 9): (create two files and check which one is newer in a temporary directory)
+mkdir temp
+cd temp
+touch file1.txt
+sleep 2
+touch file2.txt
+if [ file1.txt -nt file2.txt ]; then
+    echo "file1.txt is newer than file2.txt!"
+elif [ file1.txt -ot file2.txt ]; then
+    echo "file1.txt is older than file2.txt!"
+else
+    echo "file1.txt and file2.txt have the same modification time!"
+fi
+cd ..
+rm -r temp
+# Output:
+# file1.txt is older than file2.txt!
+# The script creates two files, file1.txt and file2.txt, with a 2-second delay between their creation
+# so that one is clearly newer than the other.
+# It then checks if file1.txt is newer than file2.txt using the -nt operator,
+# and if file1.txt is older than file2.txt using the -ot operator.
+# I don't want to clog up your computer with random files, so we delete them after the example. *Your welcome*
 
 
