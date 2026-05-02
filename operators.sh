@@ -156,3 +156,14 @@ fi
 # These operators are used to compare files and check their properties.
 
 # Bash Operators                            Meaning
+# -e                                    Check if the file or directory exists
+# -f                                    Check if the file exists and is a regular file (not a directory)
+# -d                                    Check if the path refers to a directory
+# -r                                    Check if the file is readable
+# -w                                    Check if the file is writable
+# -x                                    Check if the file is executable
+# -s                                    Check if the file exists and has size greater than zero
+# -nt                                   Check whether file1 is newer than file2
+# -ot                                   Check whether file1 is older than file2
+# !                                     Negates the condition (logical NOT)
+
