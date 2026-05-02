@@ -208,4 +208,14 @@ rm -r temp
 # Don't forget to use logical operators correctly when combining conditions
 # Don't forget to check if files exist before trying to compare them with file operators
 
+# Examples of what to avoid:
+# if [ $name =  the admin ]; then
+#   echo "Welcome"
+# fi
+# Error: forgetting to quote the variable `$name` and the string "the admin"
+
+# if [ $num > 67 ]; then
+#   echo "num is greater than the legendary number!"
+# fi
+# Error: using the wrong operator (>) for numeric comparison, which should be -gt
 
