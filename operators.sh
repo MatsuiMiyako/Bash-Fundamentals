@@ -233,3 +233,7 @@ rm -r temp
 #   echo "file1 is newer"
 # fi
 # Error: forgetting to check if the files exist before comparing them
+
+# Be careful with your operators and make sure to use them correctly to avoid syntax errors and logical errors in your scripts.
+
+# ---------------------------------------------------------------------------------------------------------------------
