@@ -219,3 +219,17 @@ rm -r temp
 # fi
 # Error: using the wrong operator (>) for numeric comparison, which should be -gt
 
+# if [ "$file" == *.txt ]; then
+#   echo "Text file"
+# fi
+# Error: the square brackets [ ] do not support pattern matching with the == operator
+
+# if [ "$age" -gt 18 -a "$age" -lt 65 ]; then
+#   echo "Working age"
+# fi
+# Error: it is recommended to use && instead of -a for logical AND in modern Bash scripts
+
+# if [ file1 -nt file2 ]; then
+#   echo "file1 is newer"
+# fi
+# Error: forgetting to check if the files exist before comparing them
