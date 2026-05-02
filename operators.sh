@@ -201,4 +201,11 @@ rm -r temp
 # and if file1.txt is older than file2.txt using the -ot operator.
 # I don't want to clog up your computer with random files, so we delete them after the example. *Your welcome*
 
+# What not to do
+# Don't forget to quote your variables when using string operators
+# Don't forget to use the correct operator for the type of comparison you want to perform
+# Don't forget to use the correct syntax for your conditions (e.g., using [ ] or [[ ]])
+# Don't forget to use logical operators correctly when combining conditions
+# Don't forget to check if files exist before trying to compare them with file operators
+
 
