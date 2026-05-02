@@ -140,7 +140,8 @@ fi
 
 # Example 7): use -o
 read -p "Enter a number again again: " num
-if [ $num -lt 67 ] -o [ $num -gt 67 ]; then
+
+if [ "$num" -lt 67 -o "$num" -gt 67 ]; then
     echo "The number is not legendary!"
 else
     echo "The number is legendary!"
@@ -166,4 +167,17 @@ fi
 # -nt                                   Check whether file1 is newer than file2
 # -ot                                   Check whether file1 is older than file2
 # !                                     Negates the condition (logical NOT)
+
+# Example 8):
+if [ -d "$HOME/Downloads" ]; then
+    echo "The Downloads folder exists!"
+else
+    echo "The Downloads folder does not exist!"
+fi
+# Example Output:
+# The Downloads folder exists!
+# The script checks if the Downloads folder exists in your home directory by using the -d operator.
+
+
+
 
