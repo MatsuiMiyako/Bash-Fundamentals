@@ -97,15 +97,15 @@ done
 
 # echo ${JusticeLeague[3]}
 # Output: (empty)
-# This will print an empty string because there is no element at index 3 after we removed "Captain America".
+# Error: This will print an empty string because there is no element at index 3 after we removed "Captain America".
 
 # JusticeLeague+=(Black Widow)
 # Output: (error)
-# This will cause an error because "Black Widow" is not quoted
+# Error: This will cause an error because "Black Widow" is not quoted
 
 # avengers = (Baatman Sooperman WoonderWomun)
 # Output: (error)
-# This will cause an error because there should be no spaces around the equal sign when creating an array.
+# Error: This will cause an error because there should be no spaces around the equal sign when creating an array.
 
 # Make sure to be careful when working with arrays and always check your syntax to avoid errors
 

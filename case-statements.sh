@@ -100,3 +100,25 @@ esac
 # Don't use case statements with only a few conditions
 # Don't forget to include the `;;` at the end of each case block
 # Don't forget to include a default case (using `*`) to handle unexpected input
+
+# Examples of what to avoid:
+
+# case "$state" in
+#   start)
+#     echo "Starting"
+#     ;;
+#   *)
+#     echo "Other"
+#     ;;
+# esac
+# Error: This is overkill for just two conditions. An if-else statement would be more appropriate here.
+
+# case "$state" in
+#   start)
+#     echo "Starting"
+#   stop)
+#     echo "Stopping"
+#     ;;
+# esac
+# Error: This will cause a syntax error because the `;;` is missing at the end of the first case block.
+# Error: This will not handle unexpected input, which could lead to unintended consequences. Always include a default case to catch any input that doesn't match the specified patterns.
