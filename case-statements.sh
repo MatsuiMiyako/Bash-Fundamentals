@@ -122,3 +122,8 @@ esac
 # esac
 # Error: This will cause a syntax error because the `;;` is missing at the end of the first case block.
 # Error: This will not handle unexpected input, which could lead to unintended consequences. Always include a default case to catch any input that doesn't match the specified patterns.
+
+# Make sure to use case statements when you have multiple conditions to check and want to keep your code clean and readable. 
+# Always remember to include the necessary syntax and a default case to handle unexpected input.
+
+# ---------------------------------------------------------------------------------------------------------------------
