@@ -12,3 +12,17 @@
 # Case statements are useful for handling multiple conditions in a cleaner and more readable way than if-else statements.
 # They allow you to match patterns using asterisks and can be more efficient when you have many conditions to check.
 
+# How do Case Statements work?
+# Here is the basic syntax of a case statement in bash:
+
+# case variable in
+#     pattern1)
+#         # code to execute if variable matches pattern1
+#         ;;
+#     pattern2)
+#         # code to execute if variable matches pattern2
+#         ;;
+#     *)
+#         # code to execute if variable does not match any pattern
+#         ;;
+# esac
