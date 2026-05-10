@@ -50,3 +50,19 @@ esac
 # If any of it matches, the corresponding code block is executed. 
 # If none of the patterns match, the code block under `*` is executed, which serves as a default case.
 
+# Example 2):
+read -p "Enter a day of the week: " day
+case $day in
+    "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday")
+        echo "It's a weekday."
+        ;;
+    "Saturday" | "Sunday")
+        echo "It's a weekend."
+        ;;
+    *)
+        echo "That's not a valid day of the week!"
+        ;;
+esac
+# The user's input is stored in the variable `day` and it is compared against the patterns for weekdays and weekends.
+# The `|` operator, acting as a logical OR, is used to match multiple patterns in a single case block.
+# It's the same as the above example.
