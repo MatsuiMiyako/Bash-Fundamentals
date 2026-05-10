@@ -49,6 +49,9 @@ esac
 # The user's input is stored in the variable `pokemon` and it is compared against the patterns "Pikachu", "Charmander", "Squirtle", and "Bulbasaur".
 # If any of it matches, the corresponding code block is executed. 
 # If none of the patterns match, the code block under `*` is executed, which serves as a default case.
+# Example Output:
+# Enter a Pokemon: Pikachu
+# Pikachu, the Mouse Pokémon.
 
 # Example 2):
 read -p "Enter a day of the week: " day
@@ -66,3 +69,29 @@ esac
 # The user's input is stored in the variable `day` and it is compared against the patterns for weekdays and weekends.
 # The `|` operator, acting as a logical OR, is used to match multiple patterns in a single case block.
 # It's the same as the above example.
+# Example Output:
+# Enter a day of the week: Saturday
+# It's a weekend.
+
+# Example 3):
+read -p "Enter a file extension: " extension
+case $extension in
+    *.txt)
+        echo "This is a text file."
+        ;;
+    *.jpg | *.jpeg | *.png)
+        echo "This is an image file."
+        ;;
+    *.pdf)
+        echo "This is a PDF file."
+        ;;
+    *)
+        echo "Other file type."
+        ;;
+esac
+# The user's input is stored in the variable `extension` and it is compared against patterns that match file extensions.
+# The `*` wildcard is used to match any characters before the specified extension, allowing for flexible pattern matching.
+# The `|` operator is used to group multiple image file extensions together in a single case block.
+# Example Output:
+# Enter a file extension: report.pdf
+# This is a PDF file.
