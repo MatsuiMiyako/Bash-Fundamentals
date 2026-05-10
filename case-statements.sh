@@ -95,3 +95,8 @@ esac
 # Example Output:
 # Enter a file extension: report.pdf
 # This is a PDF file.
+
+# What not to do
+# Don't use case statements with only a few conditions
+# Don't forget to include the `;;` at the end of each case block
+# Don't forget to include a default case (using `*`) to handle unexpected input
