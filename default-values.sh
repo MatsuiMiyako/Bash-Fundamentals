@@ -31,4 +31,5 @@ echo "Your favorite color is ${color:=blue}."
 # Output: Your favorite color is blue.
 # In this example, if the user does not enter a color and just presses enter, the variable `color` will be null, 
 # and the default value "blue" will be assigned to `color` and used in the output.
-# If 
+# Note: The `:=` operator not only provides a default value but also assigns it to the variable if it was null.
+
