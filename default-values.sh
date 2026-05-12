@@ -37,3 +37,11 @@ echo "Your favorite color is ${color:=blue}."
 # Don't forget that default values only work when the variable is null or unset
 # Don't use default values if you want to check for specific conditions
 # Don't use default values if you want to provide a default value for a variable that is already set
+
+# Examples of what to avoid:
+
+# name="Alice"
+# echo "Hello, ${name:-stranger}!"
+# Output: Hello, Alice!
+# Error: You are using a default value when the variable `name` is already set to "Alice". 
+# The default value "stranger" will not be used.
