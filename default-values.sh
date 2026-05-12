@@ -9,4 +9,17 @@
 # We do this because sometimes we want a variable to have a value even if the user doesn't assign one.
 
 # Why use default values?
-# Default values are useful when your script needs certain variables, and they need to have a value 
+# Default values are useful when your script needs certain variables, and they need to have a value to function. (not a pun)
+
+# How do default values work?
+# The syntax for default values in bash is as follows:
+# ${variable:-default_value}
+# This means that if `variable` is not set or is null, it will use `default_value` instead.
+
+# Example 1):
+echo "What is your name?"
+read name
+echo "Hello, ${name:-stranger}!"
+# Output: Hello, stranger!
+# In this example, if the user does not enter a name and just presses enter, the variable `name` will be null, 
+# and the default value "stranger" will be used in the greeting.
