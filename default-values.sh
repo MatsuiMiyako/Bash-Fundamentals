@@ -15,6 +15,8 @@
 # The syntax for default values in bash is as follows:
 # ${variable:-default_value}
 # This means that if `variable` is not set or is null, it will use `default_value` instead.
+# You can also use the following syntax to assign a default value to a variable if it is null:
+# ${variable:=default_value}
 
 # Example 1):
 echo "What is your name?"
@@ -50,3 +52,8 @@ echo "Your favorite color is ${color:=blue}."
 # Output: Your favorite color is red.
 # Error: You are using a default value when the variable `color` is already set to "red".
 
+# Make sure to use default values appropriately based on whether you want to 
+# provide a default value for a variable that may be null or unset, 
+# or if you want to assign a default value to a variable that is null.
+
+# ---------------------------------------------------------------------------------------------------------------------
