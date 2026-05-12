@@ -33,3 +33,7 @@ echo "Your favorite color is ${color:=blue}."
 # and the default value "blue" will be assigned to `color` and used in the output.
 # Note: The `:=` operator not only provides a default value but also assigns it to the variable if it was null.
 
+# What not to do:
+# Don't forget that default values only work when the variable is null or unset
+# Don't use default values if you want to check for specific conditions
+# Don't use default values if you want to provide a default value for a variable that is already set
