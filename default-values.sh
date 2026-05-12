@@ -23,3 +23,12 @@ echo "Hello, ${name:-stranger}!"
 # Output: Hello, stranger!
 # In this example, if the user does not enter a name and just presses enter, the variable `name` will be null, 
 # and the default value "stranger" will be used in the greeting.
+
+# Example 2):
+echo "What is your favorite color?"
+read color
+echo "Your favorite color is ${color:=blue}."
+# Output: Your favorite color is blue.
+# In this example, if the user does not enter a color and just presses enter, the variable `color` will be null, 
+# and the default value "blue" will be assigned to `color` and used in the output.
+# If 
