@@ -8,3 +8,7 @@
 # Pipes in bash are used to connect the output of one command to the input of another command.
 # This basically allows you to chain commands together.
 
+# Why use pipes?
+# Pipes are useful when you want to process the output of one command with another command.
+# This means you don't have to save the output of a command somewhere (like in a file) before using it with another command.
+
