@@ -32,3 +32,8 @@ ls /etc > etc_contents.txt
 sort < unsorted_list.txt > sorted_list.txt
 # This command takes the contents of unsorted_list.txt as input to the sort command,
 # and saves the sorted output to sorted_list.txt.
+
+# Example 3):
+ls /idontexist 2>> error_log.txt
+# This command attempts to list the contents of a non-existent directory and saves the error message to a file called error_log.txt.
+# If the file already exists, it will be appended to (added to the end of the file).
