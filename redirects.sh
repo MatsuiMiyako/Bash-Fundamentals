@@ -41,3 +41,15 @@ ls /idontexist 2>> error_log.txt
 # What not to do:
 # Don't forget that redirects will overwrite files if you use `>` instead of `>>`.
 # Don't use redirects if you want to connect the output of one command to the input of another command (use pipes instead).
+
+# Examples of what to avoid:
+
+# ls /etc > important_file.txt
+# Output: (no output to terminal)
+# Error: You just overwrote an important file with the output of `ls /etc`.
+
+# ls /etc < grep "shadow"
+# Output: (no output to terminal)
+# Error: You are trying to use input redirection with a command that does not accept input from a file.
+# You should use a pipe instead: ls /etc | grep "shadow"
+
