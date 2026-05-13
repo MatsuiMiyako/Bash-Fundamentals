@@ -22,3 +22,8 @@
 # 3) Error Redirects:
 #    - `2>`: Redirects the standard error (stderr) of a command to a file, overwriting the file if it already exists.
 #    - `2>>`: Redirects the standard error (stderr) of a command to a file, appending to the file if it already exists.
+
+# Example 1):
+ls /etc > etc_contents.txt
+# This command lists the contents of the /etc directory and saves the output to a file called etc_contents.txt. 
+# If the file already exists, it will be overwritten.
