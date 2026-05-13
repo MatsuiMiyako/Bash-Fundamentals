@@ -36,3 +36,24 @@ cat /etc/passwd | grep "/bin/bash" | cut -d: -f1
 # The `grep "/bin/bash"` command filters the output to show only lines that contain "/bin/bash", 
 # and the `cut -d: -f1` command extracts just the usernames.
 # This example shows that you can use multiple pipes to chain together several commands to achieve a specific result.
+
+# What not to do:
+# Don't forget that pipes only work when the output of one command is compatible with the input of the next command.
+# Don't use pipes if you want to save the output of a command to a file or if you want to use the output of a command in a variable.
+
+# Examples of what to avoid:
+
+# ls /etc | grep "shadow" > shadow_users.txt
+# Output: (no output to terminal)
+# Error: You are using a pipe to filter the output of `ls /etc`, but you are also redirecting the output to a file. 
+# The pipe will not work as expected because the output is being redirected to a file instead of being passed to the next command.
+
+# users=$(cat /etc/passwd | grep "/bin/bash" | cut -d: -f1)
+# Output: (no output to terminal)
+# Error: You are using a pipe to filter the output of `cat /etc/passwd`, but you are also trying to assign the output to a variable. 
+# The pipe will not work as expected because the output is being assigned to a variable instead of being passed to the next command.
+
+# Make sure to use pipes appropriately based on whether you want to connect the output of one command to the input of another command, 
+# or if you want to save the output of a command to a file or assign it to a variable.
+
+# ---------------------------------------------------------------------------------------------------------------------
