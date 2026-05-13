@@ -25,3 +25,14 @@ ls /etc | grep "shadow"
 # Output: shadow-
 # In this example, the `ls /etc` command lists the contents of the /etc directory, 
 # and the `grep "shadow"` command filters the output to show only lines that contain the word "shadow".
+
+# Example 2):
+# list all human users on the system
+cat /etc/passwd | grep "/bin/bash" | cut -d: -f1
+# Output: root
+# Output: user1
+# Output: user2
+# In this example, the `cat /etc/passwd` command displays the contents of the /etc/passwd file, which contains user account information. 
+# The `grep "/bin/bash"` command filters the output to show only lines that contain "/bin/bash", 
+# and the `cut -d: -f1` command extracts just the usernames.
+# This example shows that you can use multiple pipes to chain together several commands to achieve a specific result.
