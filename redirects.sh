@@ -53,3 +53,8 @@ ls /idontexist 2>> error_log.txt
 # Error: You are trying to use input redirection with a command that does not accept input from a file.
 # You should use a pipe instead: ls /etc | grep "shadow"
 
+# Make sure to use redirects appropriately based on whether you want to save the output of a command to a file,
+# or if you want to use the output of a command as input to another command without using pipes,
+# or if you want to redirect error messages to a file.
+
+# ---------------------------------------------------------------------------------------------------------------------
