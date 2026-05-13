@@ -27,3 +27,8 @@
 ls /etc > etc_contents.txt
 # This command lists the contents of the /etc directory and saves the output to a file called etc_contents.txt. 
 # If the file already exists, it will be overwritten.
+
+# Example 2):
+sort < unsorted_list.txt > sorted_list.txt
+# This command takes the contents of unsorted_list.txt as input to the sort command,
+# and saves the sorted output to sorted_list.txt.
