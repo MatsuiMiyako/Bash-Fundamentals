@@ -37,3 +37,7 @@ sort < unsorted_list.txt > sorted_list.txt
 ls /idontexist 2>> error_log.txt
 # This command attempts to list the contents of a non-existent directory and saves the error message to a file called error_log.txt.
 # If the file already exists, it will be appended to (added to the end of the file).
+
+# What not to do:
+# Don't forget that redirects will overwrite files if you use `>` instead of `>>`.
+# Don't use redirects if you want to connect the output of one command to the input of another command (use pipes instead).
