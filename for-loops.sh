@@ -10,3 +10,5 @@
 # Why use for loops?
 # For loops are useful for iterating over lists, arrays, or ranges of numbers.
 # They allow you to automate repititive tasks without having to write the same code multiple times.
+
+# How do for loops work?
