@@ -16,3 +16,12 @@
 # Syntax for pipes:
 # command1 | command2
 # This means that the output of `command1` will be passed as input to `command2`.
+
+# Example 1):
+ls /etc | grep "shadow"
+# Output: gshadow
+# Output: gshadow-
+# Output: shadow
+# Output: shadow-
+# In this example, the `ls /etc` command lists the contents of the /etc directory, 
+# and the `grep "shadow"` command filters the output to show only lines that contain the word "shadow".
