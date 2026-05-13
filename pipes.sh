@@ -12,3 +12,7 @@
 # Pipes are useful when you want to process the output of one command with another command.
 # This means you don't have to save the output of a command somewhere (like in a file) before using it with another command.
 
+# How do pipes work?
+# Syntax for pipes:
+# command1 | command2
+# This means that the output of `command1` will be passed as input to `command2`.
