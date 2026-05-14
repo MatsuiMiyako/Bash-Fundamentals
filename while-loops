@@ -45,3 +45,22 @@ done
 # The while loop continues to execute as long as the condition [ $index -lt ${#subjects[@]} ] is true.
 # This means that the loop will continue until the index variable is no longer less than the length of the array `subjects`.
 # The variable `index` is used to access each element of the array in the code block.
+
+# Example 3):
+while true; do
+    echo "yes"
+    sleep 1
+done
+# Output: yes
+# Output: yes
+# Output: yes
+# Output: yes
+# Output: yes
+# In this example, the while loop will continue to execute indefinitely because the condition is always true.
+# The code block will print "yes" every second until the loop is manually stopped.
+# You can stop the loop by pressing Ctrl + C in the terminal.
+
+# What not to do
+# Don't forget what happens if the condition is always true
+# Don't forget to include the `do` and `done` keywords.
+# Don't forget to update the variables in the code block to avoid an infinite loop.
