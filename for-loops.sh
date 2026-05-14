@@ -57,3 +57,10 @@ done
 # The variable `file` takes on the value of each file or directory in the specified path, 
 # and the code block prints out a message for each one.
 
+# What not to do
+# Don't forget to include the `do` and `done` keywords.
+# Don't forget to use the correct syntax for the list or range you want to iterate over.
+# Don't forget to use the correct variable name in the code block.
+
+
+
