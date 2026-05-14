@@ -64,3 +64,17 @@ done
 # Don't forget what happens if the condition is always true
 # Don't forget to include the `do` and `done` keywords.
 # Don't forget to update the variables in the code block to avoid an infinite loop.
+
+# Example of what to avoid:
+
+# while true; do
+#     echo "yes"
+# done
+# Error: This loop will run on forever because the condition is always true, and there is no way to stop it without human intervention.
+# Always make sure to include a way to break out of an infinite loop, such as a counter or a condition that can become false.
+
+# while [ $counter -le 5 ];
+#     echo "number $counter"
+#     counter=$((counter + 1))
+# Error: You are missing the 'do' and 'done' keywords, which means your script will not work properly without them.
+
