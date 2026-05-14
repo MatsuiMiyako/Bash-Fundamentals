@@ -29,3 +29,15 @@ done
 # In this example, the for loop repeats the code block 5 times because we specified the range {1..5}. 
 # The variable i takes on the values from 1 to 5.
 # The letter i is commonly used a the counter variable in for loops, but you can use any variable you like.
+
+# Example 2):
+subjects=("math" "ELA" "physical education")
+for subject in "${subjects[@]}"; do
+    echo "I have $subject today."
+done
+# Output: I have math today.
+# Output: I have ELA today.
+# Output: I have physical education today.
+# In this example, we have an array called subjects that contains three elements.
+# The for loop repeats over each element in the array and assigns it to the variable `subject`.
+# The code block then prints out a message for each subject.
