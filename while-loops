@@ -16,3 +16,18 @@
 # while condition; do
 #     # do something exciting here
 # done
+
+# Example 1):
+counter=1
+while [ $counter -le 5 ]; do
+    echo "number $counter"
+    counter=$((counter + 1))
+done
+# Output: number 1
+# Output: number 2
+# Output: number 3
+# Output: number 4
+# Output: number 5
+# In this example, the while loop continues to execute as long as the condition [ $counter -le 5 ] is true.
+# The variable `counter` starts at 1 and is incremented by 1 for each repetition of the loop until it is greater than 5.
+
