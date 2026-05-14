@@ -79,5 +79,6 @@ done
 # Error: The variable name in the code block is incorrect. 
 # You should use $file instead of file to access the value of the variable.
 
+# Make sure to follow the correct syntax and conventions when writing for loops in Bash to make sure your scripts work as intended.
 
-
+# ---------------------------------------------------------------------------------------------------------------------
