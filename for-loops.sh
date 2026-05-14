@@ -62,5 +62,22 @@ done
 # Don't forget to use the correct syntax for the list or range you want to iterate over.
 # Don't forget to use the correct variable name in the code block.
 
+# Example of what to avoid:
+
+# for i in {1..5}
+#     echo "number $i"
+# Error: You are missing the 'do' and 'done' keywords, which means your script will not work properly without them.
+
+# for i in 1..5; do
+#     echo "number $i"
+# Error: The syntax for the range is incorrect. You should use {1..5} instead of 1..5.
+
+# for file in /home/$USER/*; do
+#     echo "Processing file"
+#     # You can do more things here if you want
+# done
+# Error: The variable name in the code block is incorrect. 
+# You should use $file instead of file to access the value of the variable.
+
 
 
