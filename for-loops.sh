@@ -41,3 +41,19 @@ done
 # In this example, we have an array called subjects that contains three elements.
 # The for loop repeats over each element in the array and assigns it to the variable `subject`.
 # The code block then prints out a message for each subject.
+
+# Example 3):
+for file in /home/$USER/*; do
+    echo "Processing $file"
+    # You can do more things here if you want
+done
+# Output: Processing /home/USER/Desktop
+# Output: Processing /home/USER/Documents
+# Output: Processing /home/USER/Downloads
+# Output: Processing /home/USER/Music
+# Output: Processing /home/USER/Pictures
+# Output: Processing /home/USER/Videos
+# In this example, the for loop repeats over all the files and directories in the user's home directory.
+# The variable `file` takes on the value of each file or directory in the specified path, 
+# and the code block prints out a message for each one.
+
