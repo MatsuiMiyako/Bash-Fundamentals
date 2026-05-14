@@ -31,3 +31,17 @@ done
 # In this example, the while loop continues to execute as long as the condition [ $counter -le 5 ] is true.
 # The variable `counter` starts at 1 and is incremented by 1 for each repetition of the loop until it is greater than 5.
 
+# Example 2):
+subjects=("math" "ELA" "physical education")
+index=0
+while [ $index -lt ${#subjects[@]} ]; do
+    echo "I have ${subjects[$index]} today."
+    index=$((index + 1))
+done
+# Output: I have math today.
+# Output: I have ELA today.
+# Output: I have physical education today.
+# In this example, we have an array called subjects that contains three elements.
+# The while loop continues to execute as long as the condition [ $index -lt ${#subjects[@]} ] is true.
+# This means that the loop will continue until the index variable is no longer less than the length of the array `subjects`.
+# The variable `index` is used to access each element of the array in the code block.
