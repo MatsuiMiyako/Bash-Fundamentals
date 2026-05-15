@@ -78,3 +78,12 @@ done
 #     counter=$((counter + 1))
 # Error: You are missing the 'do' and 'done' keywords, which means your script will not work properly without them.
 
+# counter=1
+# while [ $counter -le 5 ]; do
+#     echo "number $counter"
+# done
+# Error: This loop will run on forever because the variable `counter` is never updated within the code block, so the condition will always be true.
+
+# Make sure to always include a way to break out of an infinite loop, such as updating a counter variable or including a condition that can become false.
+
+# ---------------------------------------------------------------------------------------------------------------------
