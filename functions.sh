@@ -40,3 +40,23 @@ addition 5 10
 # In this example, we define a function called `addition` that takes two parameters (num1 and num2), 
 # calculates their sum, and prints the result.
 # We call the function with `addition 5 10`, which passes the values 5 and 10 as arguments to the function.
+# The local keyword is used to declare variables so that they are only accessible within the funciton.
+# This means that if the variables `num1`, `num2`, and `sum` were used somewhere else in the script, 
+# they would not interfere with the variables inside the function.
+
+# Example 3):
+function the_number() {
+    local number=67
+    echo $number
+}
+function get_number() {
+    return_me=$(the_number)
+    echo "The legendary number is... $return_me!"
+}
+get_number
+# Output: The legendary number is... 67!
+# In this example, we have two functions: `the_number` and `get_number`.
+# The `the_number` function defines a local variable `number` and echoes its value.
+# The `get_number` function calls `the_number` and stores its output in the variable `return_me`, which is then printed in a message.
+# This demonstrates how you can use one function to call another function and utilize its output.
+
