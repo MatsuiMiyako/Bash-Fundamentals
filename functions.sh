@@ -17,3 +17,13 @@
 # function_name() {
 #     # do something exciting here
 # }
+# function_name
+
+# Example 1):
+function say_hello() {
+    echo "Hello, World!"
+}
+say_hello
+# Output: Hello, World!
+# In this example, we define a function called `say_hello` that prints "Hello, World!".
+# We call it by using its name without parentheses.
