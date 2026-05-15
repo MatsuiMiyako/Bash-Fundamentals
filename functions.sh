@@ -27,3 +27,16 @@ say_hello
 # Output: Hello, World!
 # In this example, we define a function called `say_hello` that prints "Hello, World!".
 # We call it by using its name without parentheses.
+
+# Example 2):
+function addition() {
+    local num1=$1
+    local num2=$2
+    local sum=$((num1 + num2))
+    echo "$num1 + $num2 = $sum"
+}
+addition 5 10
+# Output: 5 + 10 = 15
+# In this example, we define a function called `addition` that takes two parameters (num1 and num2), 
+# calculates their sum, and prints the result.
+# We call the function with `addition 5 10`, which passes the values 5 and 10 as arguments to the function.
