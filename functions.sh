@@ -60,3 +60,7 @@ get_number
 # The `get_number` function calls `the_number` and stores its output in the variable `return_me`, which is then printed in a message.
 # This demonstrates how you can use one function to call another function and utilize its output.
 
+# What not to do with functions:
+# Don't forget to call the function after defining it.
+# Don't forget to include the parentheses when defining a function.
+# Don't forget to pass the correct number of arguments when calling a function.
