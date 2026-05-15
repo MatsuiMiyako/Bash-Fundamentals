@@ -64,3 +64,24 @@ get_number
 # Don't forget to call the function after defining it.
 # Don't forget to include the parentheses when defining a function.
 # Don't forget to pass the correct number of arguments when calling a function.
+
+# Example of what to avoid:
+
+# function say_hello() {
+#     echo "Hello, World!"
+# }
+# Error: You defined the function `say_hello`, but you never called it, so nothing will happen.
+
+# function say_hello {
+#     echo "Hello, World!"
+# }
+# Error: You forgot to include the parentheses when defining the function, which means your script will not work properly.
+
+# function addition() {
+#     local num1=$1
+#     local num2=$2
+#     local sum=$((num1 + num2))
+#     echo "$num1 + $num2 = $sum"
+# }
+# addition 5
+# Error: You called the `addition` function with only one argument instead of two, which means the function will not work properly.
