@@ -85,3 +85,7 @@ get_number
 # }
 # addition 5
 # Error: You called the `addition` function with only one argument instead of two, which means the function will not work properly.
+
+# Make sure to be careful when defining and calling functions, and always double-check your syntax and arguements.
+
+# ---------------------------------------------------------------------------------------------------------------------
